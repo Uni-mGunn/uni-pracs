@@ -2,10 +2,10 @@
 
 // The `extern` keyword tells the compiler that the count function exists,
 // but will be implemented somewhere else
-extern int weightedaverage(int[], int);
+extern double weightedaverage(int[], int);
 
 int main() {
-    int array[5] = {4,5,6,7,8};
-    std::cout << "The number is: " << weightedaverage(array, 5) << std::endl;
+    int array[6] = {1,2,1,4,1,3};
+    std::cout << "The number is: " << weightedaverage(array, 6) << std::endl;
     return 0;
 }
