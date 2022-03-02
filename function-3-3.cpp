@@ -7,7 +7,7 @@ double weightedaverage(int array[], int n) {
     double weightAve = 0;
     for(int i = 0; i < n; i++) {
         int sum = 0;
-        for(int j = 0; j < n; i++) {
+        for(int j = 0; j < n; j++) {
             if (array[i] == array[j]){
                 sum++;
             }
