@@ -8,13 +8,13 @@ bool fanarray(int array[], int n) {
     int order = array[0];
     for(int i = 1; i < n; i++) {
         if (i < n/2){
-            if (array[i] > order){
+            if (array[i] >= order){
                 order = array[i];
             } else {
                 return false;
             }
         } else {
-            if (array[i] < order) {
+            if (array[i] <= order) {
                 order = array[i];
             } else {
                 return false;
