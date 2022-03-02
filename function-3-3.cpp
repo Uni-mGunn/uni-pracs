@@ -1,7 +1,7 @@
 #include <iostream>
 
 double weightedaverage(int array[], int n) {
-    if (n<=0 || n%2 == 0) {
+    if (n<=0 && n%2 == 0) {
         return 0.0;
     } 
     double weightAve = 0;
