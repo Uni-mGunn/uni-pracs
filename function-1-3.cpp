@@ -14,5 +14,5 @@ void count_numbers(int array[4][4]) {
     for(int i = 0; i < 10; i++) {
         cout << to_string(i) + ":" + to_string(sums[i]) + ";";
     }
-    cout << ";\n";
+    cout << "\n";
 }
