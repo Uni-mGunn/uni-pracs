@@ -3,6 +3,6 @@
 
 
 
-void main() {
-    return;
+int main() {
+    return 1;
 }
