@@ -10,8 +10,9 @@ void printer(int array[10][10]) {
             if(j == 10) {
                 std::cout << array[i][j] + "\n";
             } else {
-                std::cout << array[i][j] + "";
+                std::cout << array[i][j] + " ";
             }
         }
     }
+    std::cout << " ummm hello ";
 }
