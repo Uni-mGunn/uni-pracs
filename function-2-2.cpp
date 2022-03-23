@@ -10,7 +10,7 @@ int maximum_sum(int *nums,int length){
         for (int j = i; j < length; j++){
             sum += nums[j];
             if(sum > max){
-                max = sum
+                max = sum;
             }
         }
     }
