@@ -4,6 +4,7 @@
 using namespace std;
 
 void cpyia(int old_array[],int new_array[],int length){
-    int *p = new_array;
-    p = old_array;
+    for(int i = 0; i < length; i++){
+        new_array[i] = old_array[i];
+    }
 }
