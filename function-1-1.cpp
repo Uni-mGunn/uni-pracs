@@ -1,17 +1,12 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<string>
-#include<iostream>
+#include <iostream>
+#include <string>
 
-void printer(int array[10][10]) {
-    for(int i = 0; i < 10; i ++){
-        for(int j = 0; j < 10; j++){
-            if(j == 9) {
-                std::cout << array[i][j] << std::endl;
-            } else {
-                std::cout << array[i][j] << " ";
-            }
+using namespace std;
+
+void copy_2d_strings(std::string first[][2], std::string second[][2], int n){
+    for(int i=0; i<n; i++){
+        for(int j=0; j<2; j++){
+            second[i][j] = first[i][j];
         }
     }
 }
