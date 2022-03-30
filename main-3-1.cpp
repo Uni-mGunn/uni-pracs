@@ -2,16 +2,12 @@
 
 // the keyword extern means the function hello is defined in another file. 
 // in our case, it is defined in the file function-1-1.cpp
-extern void print_until_down(int *vals, int len);
+extern int count_next_element_matches(int vals[], int length);
 
 int main(){
-
-    int *pointer = new int[5];
-    for(int i=0; i<5; i++){
-        pointer[i] = i;
-    }
-
-    print_until_down(pointer, 5);
+    int vals[]={1,2,2,2,3,1,1,5,2,2};
+    int vals_length=10;
+    std::cout << count_next_element_matches(vals, 10) << std::endl;
 
     return 0;
 }

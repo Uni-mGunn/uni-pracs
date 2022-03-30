@@ -1,17 +1,15 @@
 #include<iostream>
+#include<string>
 
 // the keyword extern means the function hello is defined in another file. 
 // in our case, it is defined in the file function-1-1.cpp
-extern void print_until_down(int *vals, int len);
+extern std::string lookup_month(int month);
 
 int main(){
 
-    int *pointer = new int[5];
-    for(int i=0; i<5; i++){
-        pointer[i] = i;
+    for(int i=1; i<14; i++){
+        std::cout << lookup_month(i) << std::endl;
     }
-
-    print_until_down(pointer, 5);
 
     return 0;
 }
