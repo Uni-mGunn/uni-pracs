@@ -6,6 +6,7 @@ void print_until_down(int *vals, int len){
     std::cout << prev << " ";
     for(int i=1; i<len; i++){
         if(vals[i] < prev){
+            std::cout << std::endl;
             return;
         }
         if(i == len-1){

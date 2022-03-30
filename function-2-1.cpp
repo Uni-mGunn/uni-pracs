@@ -16,7 +16,7 @@ std::string lookup_month(int month){
         case 10: return "Oct";
         case 11: return "Nov";
         case 12: return "Dec";
-        default: return "Error";
+        default: return "invalid month";
 
     }
 } 
