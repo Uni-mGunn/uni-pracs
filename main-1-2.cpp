@@ -1,21 +1,17 @@
 #include <iostream>
 #include <string.h>
-#include "meerkat.h"
+#include "person.h"
 
 int main(){
 
 
+    person jeof("jeof", 3);
+    jeof.setName("bob");
+    std::cout << jeof.getName() << std::endl;
 
-    meerkat jeofs[4];
+    jeof.setSalary(42);
 
-    for(int i = 0; i < 4; i++){
-        jeofs[i].setName("jeof");
-        std::cout << jeofs[i].getName() << std::endl;
-
-        jeofs[i].setAge(42 + i);
-
-        std::cout << jeofs[i].getAge() << std::endl;
-    }
+    std::cout << jeof.getSalary() << std::endl;
 
     return 0;
 }
