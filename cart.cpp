@@ -2,12 +2,15 @@
 #include "cart.h"
 
 cart::cart(){
+    catCount = 0;
 }
 
 bool cart::addMeerkat(meerkat _cat){
     if (catCount < 4){
         cats[catCount++] = _cat;
+        return true;
     }
+    return false;
 }
 
 void cart::emptyCart(){

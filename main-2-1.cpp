@@ -1,21 +1,20 @@
 #include <iostream>
 #include <string.h>
+#include "cart.h"
 #include "meerkat.h"
 
 int main(){
 
+    cart vroom;
 
-
-    meerkat jeofs[4];
-
-    for(int i = 0; i < 4; i++){
-        jeofs[i].setName("jeof");
-        std::cout << jeofs[i].getName() << std::endl;
-
-        jeofs[i].setAge(42 + i);
-
-        std::cout << jeofs[i].getAge() << std::endl;
+    for(int i = 0; i < 5; i++){
+        meerkat jeof;
+        jeof.setAge(42+i);
+        jeof.setName("Jeof");
+        vroom.addMeerkat(jeof);
     }
+
+    vroom.printMeerkats();
 
     return 0;
 }

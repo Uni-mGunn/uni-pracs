@@ -1,3 +1,6 @@
+#ifndef PERSON_H
+#define PERSON_H
+
 #include <iostream>
 #include <string.h>
 
@@ -16,4 +19,5 @@ class person {
 };
 
 
+#endif 
 

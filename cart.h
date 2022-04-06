@@ -1,3 +1,6 @@
+#ifndef CART_H
+#define CART_H
+
 #include <iostream>
 #include <string.h>
 #include "meerkat.h"
@@ -7,7 +10,7 @@ using namespace std;
 class cart {
     private:
         meerkat cats[4];
-        int catCount = 0;
+        int catCount;
         string name;
     public:
         cart();                         // create an empty cart object
@@ -16,3 +19,4 @@ class cart {
         void printMeerkats(); 
 };
 
+#endif 

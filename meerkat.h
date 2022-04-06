@@ -1,3 +1,6 @@
+#ifndef MEERKAT_H
+#define MEERKAT_H
+
 #include <iostream>
 #include <string.h>
 
@@ -15,3 +18,4 @@ class meerkat {
         int getAge(); 
 };
 
+#endif 
