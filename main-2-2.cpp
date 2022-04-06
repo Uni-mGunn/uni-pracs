@@ -1,20 +1,9 @@
 #include <iostream>
 #include <string.h>
-#include "cart.h"
-#include "meerkat.h"
+#include "aircraft.h"
+#include "person.h"
 
 int main(){
-
-    cart vroom;
-
-    for(int i = 0; i < 5; i++){
-        meerkat jeof;
-        jeof.setAge(42+i);
-        jeof.setName("Jeof");
-        vroom.addMeerkat(jeof);
-    }
-
-    vroom.printMeerkats();
 
     return 0;
 }

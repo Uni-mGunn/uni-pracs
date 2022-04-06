@@ -27,7 +27,9 @@ person aircraft::getCoPilot(){
 }
 
 void aircraft::printDetails(){
-    cout << callsign << endl << thePilot << endl << theCoPilot << endl;
+    cout << callsign << endl;
+    cout << thePilot.getName() << endl;
+    cout << theCoPilot.getName() << endl;
 }
 
 

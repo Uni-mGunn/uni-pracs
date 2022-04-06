@@ -11,6 +11,7 @@ class person {
         int salary;
         string myName;
     public:
+        person();
         person(string myName,int salary); // a name and salary must be provided to create a person
         void setName(string myName);      // change the person's name
         string getName();

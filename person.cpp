@@ -1,6 +1,9 @@
 #include <iostream>
 #include "person.h"
 
+person::person(){
+}
+
 person::person(string _myName,int _salary){
     myName = _myName;
     salary = _salary;
