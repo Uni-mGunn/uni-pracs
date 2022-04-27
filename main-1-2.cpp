@@ -10,8 +10,18 @@ int main(){
 
     Shelf shelf = Shelf(5);
 
+    std::cout << shelf.get_width() << " " << shelf.get_number_of_music_boxes() << std::endl;
+
     shelf.add_music_box(box);
+
+    std::cout << shelf.get_width() << " " << shelf.get_number_of_music_boxes() << std::endl;
+
     shelf.add_music_box(newBox);
-    
+
+    std::cout << shelf.get_width() << " " << shelf.get_number_of_music_boxes() << std::endl;
+
+    Music_box *boxes = shelf.get_contents();
+
+    std::cout << boxes[1].get_width() << std::endl;
     return 0;
 }

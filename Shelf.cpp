@@ -33,12 +33,11 @@ Music_box *Shelf::get_contents(){
 // otherwise returns false
 bool Shelf::add_music_box(Music_box a_music_box){
     if (numBoxes < width){
-        numBoxes += 1;
         boxes[numBoxes] = a_music_box;
+        numBoxes += 1;
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
  
 Shelf::~Shelf(){
