@@ -46,5 +46,6 @@ bool Shelf::add_music_box(Music_box a_music_box){
 }
  
 Shelf::~Shelf(){
+    delete[] boxes;
     // destructor(this);
 }
