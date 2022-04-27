@@ -4,11 +4,13 @@
 using namespace std;
 
 Shelf::Shelf(){
+    boxes = new Music_box();
     width = 0;
     numBoxes = 0;
 }  // default constructor
 
 Shelf::Shelf(int _width){
+    boxes = new Music_box();
     width = _width;
     numBoxes = 0;
 }  // constructor for shelf with given width in centimetres
