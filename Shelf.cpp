@@ -8,6 +8,7 @@ Shelf::Shelf(){
     Music_box musicBoxes[width];
     boxes = musicBoxes;
     numBoxes = 0;
+    widthUsed = 0;
 }  // default constructor
 
 Shelf::Shelf(int _width){
@@ -15,6 +16,7 @@ Shelf::Shelf(int _width){
     Music_box musicBoxes[width];
     boxes = musicBoxes;
     numBoxes = 0;
+    widthUsed = 0;
 }  // constructor for shelf with given width in centimetres
 
 int Shelf::get_width(){
@@ -34,8 +36,9 @@ Music_box *Shelf::get_contents(){
 // returns true and adds music box to shelf if there is sufficient space
 // otherwise returns false
 bool Shelf::add_music_box(Music_box a_music_box){
-    if (numBoxes < width){
+    if (widthUsed + a_music_box.get_width() <= width){
         boxes[numBoxes] = a_music_box;
+        widthUsed += a_music_box.get_width();
         numBoxes += 1;
         return true;
     }
@@ -43,5 +46,5 @@ bool Shelf::add_music_box(Music_box a_music_box){
 }
  
 Shelf::~Shelf(){
-
+    // destructor(this);
 }

@@ -9,6 +9,7 @@ class Shelf {
         Music_box *boxes;
         int numBoxes;
         int width;
+        int widthUsed;
     public:
         Shelf();  // default constructor
         Shelf(int width);  // constructor for shelf with given width in centimetres

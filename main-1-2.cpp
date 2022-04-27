@@ -22,7 +22,7 @@ int main(){
 
     Music_box *boxes = shelf.get_contents();
 
-    std::cout << boxes[0].get_width() << std::endl;
+    std::cout << boxes[1].get_width() << std::endl;
     return 0;
 }
 
