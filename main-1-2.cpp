@@ -1,22 +1,17 @@
 #include <iostream>
 #include <string.h>
-#include "person.h"
+#include "Shelf.h"
 
 int main(){
+    Music_box box = Music_box();
+    std::cout << box.get_song() << box.get_width() << std::endl;
+    Music_box newBox = Music_box("Jeof", 375);
+    std::cout << newBox.get_song() << newBox.get_width() << std::endl;
 
+    Shelf shelf = Shelf(5);
 
-    person jeof("jeof", 3);
-    jeof.setName("bob");
-    std::cout << jeof.getName() << std::endl;
-
-    jeof.setSalary(42);
-
-    std::cout << jeof.getSalary() << std::endl;
-
+    shelf.add_music_box(box);
+    shelf.add_music_box(newBox);
+    
     return 0;
 }
-
-// in linux, you can compile this program using g++
-// g++ -Wall main-1-1.cpp function-1-1.cpp -o main.out
-// -Wall means show all Warnings
-// -o means you want the output to be named main.out
