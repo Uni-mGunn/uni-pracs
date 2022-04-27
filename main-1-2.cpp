@@ -25,3 +25,4 @@ int main(){
     std::cout << boxes[1].get_width() << std::endl;
     return 0;
 }
+
