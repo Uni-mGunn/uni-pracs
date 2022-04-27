@@ -8,7 +8,7 @@ int main(){
     Music_box newBox = Music_box("Jeof", 375);
     std::cout << newBox.get_song() << newBox.get_width() << std::endl;
 
-    Shelf shelf = Shelf(5);
+    Shelf shelf = Shelf(1);
 
     std::cout << shelf.get_width() << " " << shelf.get_number_of_music_boxes() << std::endl;
 
@@ -22,7 +22,7 @@ int main(){
 
     Music_box *boxes = shelf.get_contents();
 
-    std::cout << boxes[1].get_width() << std::endl;
+    std::cout << boxes[0].get_width() << std::endl;
     return 0;
 }
 
