@@ -10,7 +10,7 @@ int AirCrafts::checkSort(Helicopter **craft, int n)
 {
    while ( --n >= 1 ) 
    {
-      if ( craft[n] < craft[n-1] ) 
+      if ( craft[n]->get_craftID() < craft[n-1]->get_craftID() ) 
       {
          return 0;
       }

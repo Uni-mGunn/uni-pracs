@@ -4,7 +4,6 @@
 #include "AirCraft.h"
 #include "Airplane.h"
 
-
 Airplane::Airplane() : Helicopter(){
     passengers = 0;
 }        // inherit from base class default constructor
