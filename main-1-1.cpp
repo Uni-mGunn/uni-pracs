@@ -8,4 +8,3 @@ int main(){
 }
 
 
-// run with {g++ -Wall {{main file}} {{class cpp file}} }
