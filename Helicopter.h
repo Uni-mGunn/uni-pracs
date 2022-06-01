@@ -20,6 +20,6 @@ class Helicopter : public AirCraft {
 
         int get_speed(); // returns speed of aircraft
 
-        static int get_num_birds(); // returns num birds 
+        static int get_numBirds(); // returns num birds 
 };
 #endif
