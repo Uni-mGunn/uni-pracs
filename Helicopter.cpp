@@ -16,7 +16,7 @@ Helicopter::Helicopter() : AirCraft() {
 //     craftID = numBirds;
 //     numBirds += 1;
 // }
-Helicopter::Helicopter(int w) : AirCraft("", w, 0) {
+Helicopter::Helicopter(int w) : AirCraft("Helicopter", w, 0) {
     craftID = numBirds;
     numBirds += 1;
 }     // creates a Helicopter with weight w

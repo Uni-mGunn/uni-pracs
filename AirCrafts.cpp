@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "AirCrafts.h"
+#include "Helicopter.h"
 
 using namespace std;
 
