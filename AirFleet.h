@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string.h>
 #include "AirCraft.h"
+#include "Helicopter.h"
 
 using namespace std;
 class AirFleet {
