@@ -2,8 +2,8 @@
 
 
 int main() {
-    AirFleet *fleet = new AirFleet();
-    
+    // AirFleet *fleet = new AirFleet();
+
     
 
     return 0;
