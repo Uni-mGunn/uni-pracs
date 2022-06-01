@@ -37,3 +37,7 @@ int Helicopter::get_speed(){
         return 120;
     }
 } // returns speed of aircraft
+
+int Helicopter::get_num_birds() {
+    return numBirds;
+}

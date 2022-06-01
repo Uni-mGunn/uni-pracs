@@ -19,5 +19,7 @@ class Helicopter : public AirCraft {
         int get_craftID();
 
         int get_speed(); // returns speed of aircraft
+
+        static int get_num_birds(); // returns num birds 
 };
 #endif
