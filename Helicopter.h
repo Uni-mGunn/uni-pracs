@@ -17,5 +17,7 @@ class Helicopter : public AirCraft {
                             // and length of service, service==0
         void set_craftID(int w);
         int get_craftID();
+
+        int get_speed(); // returns speed of aircraft
 };
 #endif
